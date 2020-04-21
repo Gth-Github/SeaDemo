@@ -1,0 +1,61 @@
+MAP NAME: User Defined Map
+MAP ORGINAL SCALE: 10000
+BEGIN
+<
+LAYER NAME: 综合图层
+ATTRIBUTES COUNT: 1
+ <
+  ATTR NAME: NAME
+  DATA TYPE: STRING
+ > 
+GEO TYPE: ANYTYPE
+GEO STYLE COUNT: 0 
+>
+//////////////////////////////////////////////////////////////////
+BEGIN
+<
+LAYER NAME: 目的地图层
+ATTRIBUTES COUNT: 2
+ <
+  ATTR NAME: NAME
+  DATA TYPE: STRING
+ > 
+  <
+  ATTR NAME: ID
+  DATA TYPE: INT
+ > 
+GEO TYPE: POINT
+GEO STYLE COUNT: 0 
+>
+//////////////////////////////////////////////////////////////////
+<
+LAYER NAME: 标记图层
+ATTRIBUTES COUNT: 2
+ <
+  ATTR NAME: NAME
+  DATA TYPE: STRING
+ > 
+  <
+  ATTR NAME: ID
+  DATA TYPE: INT
+ > 
+GEO TYPE: POINT
+GEO STYLE COUNT: 0 
+>
+//////////////////////////////////////////////////////////////////
+<
+LAYER NAME: 测标图层
+ATTRIBUTES COUNT: 2
+ <
+  ATTR NAME: NAME
+  DATA TYPE: STRING
+ > 
+  <
+  ATTR NAME: ID
+  DATA TYPE: INT
+ > 
+GEO TYPE: POINT
+GEO STYLE COUNT: 0 
+>
+//////////////////////////////////////////////////////////////////
+END

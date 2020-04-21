@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <demo.viewdraw.yima.Seademo.cameratest.utils.MjpegView
+        android:id="@+id/mjpegview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGray" />
+
+    <LinearLayout
+        android:id="@+id/layMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/maintab_toolbar_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMenu1"
+            style="@style/menu_bottom"
+            android:drawableTop="@drawable/shot_press"
+            android:text="@string/take_picture" />
+
+        <Button
+            android:id="@+id/btnMenu2"
+            style="@style/menu_bottom"
+            android:drawableTop="@drawable/icon2"
+            android:text="@string/sender_switch" />
+
+        <Button
+            android:id="@+id/btnMenu3"
+            style="@style/menu_bottom"
+            android:drawableTop="@drawable/channel_press"
+            android:text="@string/pictures" />
+
+        <Button
+            android:id="@+id/btnMenu4"
+            style="@style/menu_bottom"
+            android:drawableTop="@drawable/zoom_press"
+            android:text="@string/fullscreen" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/laySender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layMenu"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/text_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/sender_label" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                android:text="@string/sender_clear"
+                android:textColor="@color/colorBlue" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvData"
+            style="@style/text_view"
+            android:layout_width="390dp"
+            android:layout_height="150dp"
+            android:background="@drawable/btn_style_border"
+            android:scrollbars="vertical"
+            android:textColor="@color/colorBlack" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_style_border"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/etSend"
+                style="@style/edit_view"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/send_hint"
+                android:textColorHint="@color/colorGray" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_style_send"
+                android:text="@string/sender_send"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
